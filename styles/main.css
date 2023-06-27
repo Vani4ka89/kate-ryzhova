@@ -138,7 +138,7 @@ h4 {
     padding-top: 57px;
 }
 
-.about, .services {
+.about, .services, .collaborations {
     display: flex;
     flex-direction: column;
 }
@@ -182,30 +182,49 @@ h4 {
 /**************************************************************/
 
 .services {
-    margin-top: 150px;
+    margin: 150px 0 150px 0;
+
 }
 
-.services-photo {
+.services-photos_1 {
+    margin-bottom: 20px;
+}
+
+.services-photos_1, .services-photos_2, .collaborations_photo_content {
     display: flex;
     justify-content: space-between;
 }
 
-.services-photo-1 {
+.services-1 {
     width: 610px;
-    height: 610px;
-    background-image: url("images/service-1.png");
+    height: 476px;
+    background-image: url("../images/service-1.png");
 }
 
-.services-photo-1 {
-    background-image: url("images/service-2.png");
+.services-2 {
+    width: 610px;
+    height: 476px;
+    background-image: url("../images/service-2.png");
 }
 
-.services-photo-1 {
-    background-image: url("images/service-3.png");
+.services-3 {
+    width: 610px;
+    height: 476px;
+    background-image: url("../images/service-3.png");
 }
 
-.services-photo-1 {
-    background-image: url("images/service-4.png");
+.services-4 {
+    width: 610px;
+    height: 476px;
+    background-image: url("../images/service-4.png");
+    background-repeat: no-repeat;
+}
+
+/**********************************************************************/
+
+.collaborations-photo {
+    width: 400px;
+    height: 570px;
 }
 
 
