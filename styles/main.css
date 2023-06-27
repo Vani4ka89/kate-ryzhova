@@ -1,5 +1,7 @@
+/***********************************GENERAL********************************/
+
 html, body {
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 320px;
 }
 
@@ -44,6 +46,8 @@ h3 {
 .container {
     max-width: 1240px;
 }
+
+/************************************HEADER******************************/
 
 .header {
     width: 100%;
@@ -131,14 +135,14 @@ h4 {
     font-size: 45px;
 }
 
-/*********************************************************/
+/*********************ABOUT************************************/
 
 .main {
     width: 100%;
     padding-top: 57px;
 }
 
-.about, .services, .collaborations {
+.about, .services, .collaborations, .portfolio, .contacts {
     display: flex;
     flex-direction: column;
 }
@@ -179,38 +183,107 @@ h4 {
     height: 610px;
 }
 
-/**************************************************************/
+/*************************SERVICES*************************************/
 
 .services {
     margin: 150px 0 150px 0;
-
 }
 
-.services-photos_1 {
+.services-photos_1, .portfolio-photos_1 {
     margin-bottom: 20px;
 }
 
-.services-photos_1, .services-photos_2, .collaborations_photo_content {
+.services-photos_1, .services-photos_2, .collaborations_photo_content, .portfolio-photos_1, .portfolio-photos_2 {
     display: flex;
     justify-content: space-between;
+}
+
+.services-1, .services-2, .services-3, .services-4, .collaborations-photo_1, .collaborations-photo_2, .collaborations-photo_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.services-1::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.services-btn, .collaborations-btn {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.services-btn a, .collaborations-btn a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 13px 70px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.services-btn a:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.services-btn p, .collaborations-btn p {
+    width: 230px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .services-1 {
     width: 610px;
     height: 476px;
     background-image: url("../images/service-1.png");
+    background-repeat: no-repeat;
+}
+
+.services-1::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .services-2 {
     width: 610px;
     height: 476px;
     background-image: url("../images/service-2.png");
+    background-repeat: no-repeat;
+}
+
+.services-2::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .services-3 {
     width: 610px;
     height: 476px;
     background-image: url("../images/service-3.png");
+    background-repeat: no-repeat;
+}
+
+.services-3::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .services-4 {
@@ -220,13 +293,105 @@ h4 {
     background-repeat: no-repeat;
 }
 
-/**********************************************************************/
-
-.collaborations-photo {
-    width: 400px;
-    height: 570px;
+.services-4::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
+/***********************COLLABORATIONS***********************************************/
+
+.collaborations {
+    margin-bottom: 150px;
+}
+
+.collaborations-photo_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collaborations-btn a:hover {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.collaborations-photo_1 {
+    width: 400px;
+    height: 570px;
+    background-image: url("../images/colaboration-1.png");
+    position: relative;
+}
+
+.collaborations-photo_1::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.collaborations-photo_2 {
+    width: 400px;
+    height: 570px;
+    background-image: url("../images/colaboration-2.png");
+    position: relative;
+}
+
+.collaborations-photo_2::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.collaborations-photo_3 {
+    width: 400px;
+    height: 570px;
+    background-image: url("../images/colaboration-3.png");
+    position: relative;
+}
+
+.collaborations-photo_3::after {
+    content: '';
+    background: rgba(34, 34, 34, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/********************************************PORTFOLIO***********************/
+
+.portfolio {
+    margin-bottom: 150px;
+}
+
+.portfolio a {
+    display: block;
+    align-self: center;
+    font-size: 20px;
+    margin-top: 55px;
+    padding: 13px 35px;
+    border: 1px solid #222222;
+    transition: 0.3s;
+}
+
+.portfolio a:hover {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+/*****************************************CONTACTS*************************/
+
+.contacts {
+    margin-bottom: 150px;
+}
+
+.contacts-info {
+    width: 100%;
+}
 
 /*********************************************************************/
 
