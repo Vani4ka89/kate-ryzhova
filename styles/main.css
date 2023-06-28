@@ -392,7 +392,6 @@ h4 {
 }
 
 .contacts-info {
-    height: 452px;
     display: flex;
     justify-content: space-around;
 }
@@ -402,26 +401,35 @@ h4 {
     max-height: 365px;
 }
 
-.form input {
-    height: 15%;
+.form .input {
+    height: 10%;
     width: 100%;
     margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 18px;
 }
 
-.form input, textarea {
+.form .input, textarea {
     display: block;
     border: 1px solid #222222;
 }
 
-textarea {
+.form textarea {
+    width: 100%;
+    height: 160px;
     margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.form .btn {
+    display: block;
+    align-self: flex-end;
 }
 
 /********************************FOOTER*******************************/
 
 .footer {
     width: 100%;
-    /*height: 390px;*/
     padding: 80px 0;
     background-color: #222222;
 }
