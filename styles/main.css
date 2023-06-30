@@ -48,6 +48,37 @@ h3 {
     max-width: 1240px;
 }
 
+.about,
+.services,
+.collaborations,
+.portfolio,
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-photos_1,
+.services-photos_2,
+.collaborations_photo_content,
+.portfolio-photos_1,
+.portfolio-photos_2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-1,
+.services-2,
+.services-3,
+.services-4,
+.collaborations-photo_1,
+.collaborations-photo_2,
+.collaborations-photo_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 /************************************HEADER******************************/
 
 .header {
@@ -143,11 +174,6 @@ h4 {
     padding-top: 57px;
 }
 
-.about, .services, .collaborations, .portfolio, .contacts {
-    display: flex;
-    flex-direction: column;
-}
-
 .about-content {
     width: 100%;
     display: flex;
@@ -190,20 +216,9 @@ h4 {
     margin: 150px 0 150px 0;
 }
 
-.services-photos_1, .portfolio-photos_1 {
+.services-photos_1,
+.portfolio-photos_1 {
     margin-bottom: 20px;
-}
-
-.services-photos_1, .services-photos_2, .collaborations_photo_content, .portfolio-photos_1, .portfolio-photos_2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.services-1, .services-2, .services-3, .services-4, .collaborations-photo_1, .collaborations-photo_2, .collaborations-photo_3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .services-1::after {
@@ -214,13 +229,15 @@ h4 {
     width: 100%;
 }
 
-.services-btn, .collaborations-btn {
+.services-btn,
+.collaborations-btn {
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.services-btn a, .collaborations-btn a {
+.services-btn a,
+.collaborations-btn a {
     display: inline-block;
     border: 1px solid #FFFFFF;
     font-size: 20px;
@@ -235,7 +252,8 @@ h4 {
     color: #222222;
 }
 
-.services-btn p, .collaborations-btn p {
+.services-btn p,
+.collaborations-btn p {
     width: 230px;
     font-size: 24px;
     text-transform: uppercase;
@@ -393,16 +411,17 @@ h4 {
 
 .contacts-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
     width: 610px;
-    max-height: 365px;
 }
 
 .form .input {
-    height: 10%;
+    height: 15%;
     width: 100%;
     margin-bottom: 20px;
     padding-left: 20px;
@@ -418,12 +437,70 @@ h4 {
     width: 100%;
     height: 160px;
     margin-bottom: 35px;
+    padding-left: 20px;
     font-size: 18px;
 }
 
-.form .btn {
-    display: block;
+form .btn {
     align-self: flex-end;
+    font-size: 20px;
+    padding: 13px 70px;
+    border: 1px solid #222222;
+}
+
+.social-icons a {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.social-icons p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tel-tik {
+    margin-left: 65px;
+}
+
+.instagram,
+.facebook {
+    margin-bottom: 30px;
+}
+
+.instagram::before {
+    content: url("../images/instagram.svg");
+    margin-right: 20px;
+}
+
+.facebook::before {
+    content: url("../images/facebook.svg");
+    margin-right: 20px;
+}
+
+.telegram::before {
+    content: url("../images/telegram.svg");
+    margin-right: 20px;
+}
+
+.tiktok::before {
+    content: url("../images/tik-tok.svg");
+    margin-right: 20px;
+}
+
+.contacts-data {
+    display: flex;
+}
+
+.contacts-data p:not(:last-of-type) {
+    margin-bottom: 45px;
 }
 
 /********************************FOOTER*******************************/
